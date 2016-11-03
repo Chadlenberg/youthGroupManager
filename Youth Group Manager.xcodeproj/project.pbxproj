@@ -15,6 +15,10 @@
 		3A9DD94C1DA8060600338143 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9DD94A1DA8060600338143 /* LaunchScreen.storyboard */; };
 		3A9DD9571DA8060700338143 /* Youth_Group_ManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9DD9561DA8060700338143 /* Youth_Group_ManagerTests.swift */; };
 		3A9DD9621DA8060700338143 /* Youth_Group_ManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9DD9611DA8060700338143 /* Youth_Group_ManagerUITests.swift */; };
+		3AA483C21DAD6EAE00926509 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA483C11DAD6EAE00926509 /* Student.swift */; };
+		3AA483EE1DAE910D00926509 /* StudentCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA483ED1DAE910D00926509 /* StudentCollectionViewController.swift */; };
+		3AA483F01DAE927100926509 /* StuDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA483EF1DAE927100926509 /* StuDatabase.swift */; };
+		3AA483F21DAE92E200926509 /* DatabaseSearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA483F11DAE92E200926509 /* DatabaseSearchResults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		3A9DD95D1DA8060700338143 /* Youth Group ManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Youth Group ManagerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9DD9611DA8060700338143 /* Youth_Group_ManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Youth_Group_ManagerUITests.swift; sourceTree = "<group>"; };
 		3A9DD9631DA8060700338143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AA483C11DAD6EAE00926509 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		3AA483ED1DAE910D00926509 /* StudentCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentCollectionViewController.swift; sourceTree = "<group>"; };
+		3AA483EF1DAE927100926509 /* StuDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StuDatabase.swift; sourceTree = "<group>"; };
+		3AA483F11DAE92E200926509 /* DatabaseSearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseSearchResults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +107,10 @@
 		3A9DD93D1DA8060600338143 /* Youth Group Manager */ = {
 			isa = PBXGroup;
 			children = (
+				3AA483BE1DAD65C300926509 /* Model */,
+				3AA483BF1DAD65CA00926509 /* View */,
+				3AA483C01DAD65D000926509 /* Controller */,
 				3A9DD93E1DA8060600338143 /* AppDelegate.swift */,
-				3A9DD9401DA8060600338143 /* ViewController.swift */,
 				3A9DD9421DA8060600338143 /* Main.storyboard */,
 				3A9DD9481DA8060600338143 /* Assets.xcassets */,
 				3A9DD94A1DA8060600338143 /* LaunchScreen.storyboard */,
@@ -126,6 +136,32 @@
 				3A9DD9631DA8060700338143 /* Info.plist */,
 			);
 			path = "Youth Group ManagerUITests";
+			sourceTree = "<group>";
+		};
+		3AA483BE1DAD65C300926509 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3AA483C11DAD6EAE00926509 /* Student.swift */,
+				3AA483EF1DAE927100926509 /* StuDatabase.swift */,
+				3AA483F11DAE92E200926509 /* DatabaseSearchResults.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3AA483BF1DAD65CA00926509 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3AA483C01DAD65D000926509 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A9DD9401DA8060600338143 /* ViewController.swift */,
+				3AA483ED1DAE910D00926509 /* StudentCollectionViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +299,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A9DD9471DA8060600338143 /* Youth_Group_Manager.xcdatamodeld in Sources */,
+				3AA483F01DAE927100926509 /* StuDatabase.swift in Sources */,
 				3A9DD9411DA8060600338143 /* ViewController.swift in Sources */,
 				3A9DD93F1DA8060600338143 /* AppDelegate.swift in Sources */,
+				3AA483EE1DAE910D00926509 /* StudentCollectionViewController.swift in Sources */,
+				3AA483F21DAE92E200926509 /* DatabaseSearchResults.swift in Sources */,
+				3AA483C21DAD6EAE00926509 /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +547,7 @@
 				3A9DD9681DA8060700338143 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A9DD9691DA8060700338143 /* Build configuration list for PBXNativeTarget "Youth Group ManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +556,7 @@
 				3A9DD96B1DA8060700338143 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A9DD96C1DA8060700338143 /* Build configuration list for PBXNativeTarget "Youth Group ManagerUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +565,7 @@
 				3A9DD96E1DA8060700338143 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -1,16 +1,19 @@
 //
 //  ViewController.swift
-//  Youth Group Manager
+//  Student Data Entry
 //
-//  Created by Chad Wollenberg on 10/7/16.
+//  Created by Chad Wollenberg on 10/14/16.
 //  Copyright © 2016 Tornado Alley Software. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var firstNameField: UITextField!
+    
+  lazy var slideInTransitioningDelegate = SlideInPresentationManager()
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +24,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
 }
 
