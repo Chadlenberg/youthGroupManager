@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A7850331DCECE210067AB36 /* AuthenticationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7850321DCECE210067AB36 /* AuthenticationHandler.swift */; };
+		3A7850491DD029910067AB36 /* KeychainSwiftDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7850481DD029910067AB36 /* KeychainSwiftDistrib.swift */; };
+		3A78504B1DD02ECF0067AB36 /* AuthenticationHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A78504A1DD02ECF0067AB36 /* AuthenticationHandlerTests.swift */; };
+		3A78504D1DD030320067AB36 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3A78504C1DD030320067AB36 /* README.md */; };
 		3A9DD93F1DA8060600338143 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9DD93E1DA8060600338143 /* AppDelegate.swift */; };
 		3A9DD9411DA8060600338143 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9DD9401DA8060600338143 /* ViewController.swift */; };
 		3A9DD9441DA8060600338143 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9DD9421DA8060600338143 /* Main.storyboard */; };
@@ -22,6 +26,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3A7850411DD028BE0067AB36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A78503B1DD028BE0067AB36 /* KeychainAccess.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 140F195C1A49D79400B0016A;
+			remoteInfo = KeychainAccess;
+		};
+		3A7850431DD028BE0067AB36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A78503B1DD028BE0067AB36 /* KeychainAccess.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 140F19671A49D79500B0016A;
+			remoteInfo = KeychainAccessTests;
+		};
+		3A7850451DD028BE0067AB36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A78503B1DD028BE0067AB36 /* KeychainAccess.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 14A630151D3293C700809B3F;
+			remoteInfo = TestHost;
+		};
 		3A9DD9531DA8060700338143 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3A9DD9331DA8060600338143 /* Project object */;
@@ -39,6 +64,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A7850321DCECE210067AB36 /* AuthenticationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationHandler.swift; sourceTree = "<group>"; };
+		3A78503B1DD028BE0067AB36 /* KeychainAccess.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KeychainAccess.xcodeproj; path = "../../Downloads/KeychainAccess-master/Lib/KeychainAccess.xcodeproj"; sourceTree = "<group>"; };
+		3A7850481DD029910067AB36 /* KeychainSwiftDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainSwiftDistrib.swift; sourceTree = "<group>"; };
+		3A78504A1DD02ECF0067AB36 /* AuthenticationHandlerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationHandlerTests.swift; sourceTree = "<group>"; };
+		3A78504C1DD030320067AB36 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3A78504E1DD030900067AB36 /* Youth Group Manager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Youth Group Manager.entitlements"; sourceTree = "<group>"; };
 		3A9DD93B1DA8060600338143 /* Youth Group Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Youth Group Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9DD93E1DA8060600338143 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A9DD9401DA8060600338143 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +115,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A7850341DCEDB620067AB36 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A78504C1DD030320067AB36 /* README.md */,
+				3A7850481DD029910067AB36 /* KeychainSwiftDistrib.swift */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		3A78503A1DD028BD0067AB36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A78503B1DD028BE0067AB36 /* KeychainAccess.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A78503C1DD028BE0067AB36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A7850421DD028BE0067AB36 /* KeychainAccess.framework */,
+				3A7850441DD028BE0067AB36 /* KeychainAccessTests.xctest */,
+				3A7850461DD028BE0067AB36 /* TestHost.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3A9DD9321DA8060600338143 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +149,7 @@
 				3A9DD9551DA8060700338143 /* Youth Group ManagerTests */,
 				3A9DD9601DA8060700338143 /* Youth Group ManagerUITests */,
 				3A9DD93C1DA8060600338143 /* Products */,
+				3A78503A1DD028BD0067AB36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +166,8 @@
 		3A9DD93D1DA8060600338143 /* Youth Group Manager */ = {
 			isa = PBXGroup;
 			children = (
+				3A78504E1DD030900067AB36 /* Youth Group Manager.entitlements */,
+				3A7850341DCEDB620067AB36 /* Support Files */,
 				3AA483BE1DAD65C300926509 /* Model */,
 				3AA483BF1DAD65CA00926509 /* View */,
 				3AA483C01DAD65D000926509 /* Controller */,
@@ -125,6 +186,7 @@
 			children = (
 				3A9DD9561DA8060700338143 /* Youth_Group_ManagerTests.swift */,
 				3A9DD9581DA8060700338143 /* Info.plist */,
+				3A78504A1DD02ECF0067AB36 /* AuthenticationHandlerTests.swift */,
 			);
 			path = "Youth Group ManagerTests";
 			sourceTree = "<group>";
@@ -144,6 +206,7 @@
 				3AA483C11DAD6EAE00926509 /* Student.swift */,
 				3AA483EF1DAE927100926509 /* StuDatabase.swift */,
 				3AA483F11DAE92E200926509 /* DatabaseSearchResults.swift */,
+				3A7850321DCECE210067AB36 /* AuthenticationHandler.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -232,7 +295,13 @@
 				TargetAttributes = {
 					3A9DD93A1DA8060600338143 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6E6DF3G5LV;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					3A9DD9511DA8060700338143 = {
 						CreatedOnToolsVersion = 8.0;
@@ -257,6 +326,12 @@
 			mainGroup = 3A9DD9321DA8060600338143;
 			productRefGroup = 3A9DD93C1DA8060600338143 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3A78503C1DD028BE0067AB36 /* Products */;
+					ProjectRef = 3A78503B1DD028BE0067AB36 /* KeychainAccess.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3A9DD93A1DA8060600338143 /* Youth Group Manager */,
@@ -265,6 +340,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3A7850421DD028BE0067AB36 /* KeychainAccess.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KeychainAccess.framework;
+			remoteRef = 3A7850411DD028BE0067AB36 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3A7850441DD028BE0067AB36 /* KeychainAccessTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KeychainAccessTests.xctest;
+			remoteRef = 3A7850431DD028BE0067AB36 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3A7850461DD028BE0067AB36 /* TestHost.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TestHost.app;
+			remoteRef = 3A7850451DD028BE0067AB36 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3A9DD9391DA8060600338143 /* Resources */ = {
@@ -300,8 +399,11 @@
 			files = (
 				3A9DD9471DA8060600338143 /* Youth_Group_Manager.xcdatamodeld in Sources */,
 				3AA483F01DAE927100926509 /* StuDatabase.swift in Sources */,
+				3A78504D1DD030320067AB36 /* README.md in Sources */,
 				3A9DD9411DA8060600338143 /* ViewController.swift in Sources */,
 				3A9DD93F1DA8060600338143 /* AppDelegate.swift in Sources */,
+				3A7850331DCECE210067AB36 /* AuthenticationHandler.swift in Sources */,
+				3A7850491DD029910067AB36 /* KeychainSwiftDistrib.swift in Sources */,
 				3AA483EE1DAE910D00926509 /* StudentCollectionViewController.swift in Sources */,
 				3AA483F21DAE92E200926509 /* DatabaseSearchResults.swift in Sources */,
 				3AA483C21DAD6EAE00926509 /* Student.swift in Sources */,
@@ -312,6 +414,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A78504B1DD02ECF0067AB36 /* AuthenticationHandlerTests.swift in Sources */,
 				3A9DD9571DA8060700338143 /* Youth_Group_ManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +557,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Youth Group Manager/Youth Group Manager.entitlements";
+				DEVELOPMENT_TEAM = 6E6DF3G5LV;
 				INFOPLIST_FILE = "Youth Group Manager/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.tornadoAlley.Youth-Group-Manager";
@@ -466,6 +571,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Youth Group Manager/Youth Group Manager.entitlements";
+				DEVELOPMENT_TEAM = 6E6DF3G5LV;
 				INFOPLIST_FILE = "Youth Group Manager/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.tornadoAlley.Youth-Group-Manager";
